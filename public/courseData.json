@@ -1,0 +1,74 @@
+[
+    {
+        "id": "1",
+        "course_name": "Introduction to Python",
+        "image": "https://i.ibb.co/k26h0L0/Rectangle-2.png",
+        "description": "Learn the basics of Python programming language.",
+        "price": "$99",
+        "credit": 3
+    },
+    {
+        "id": "2",
+        "course_name": "Advanced Java",
+        "image": "https://i.ibb.co/0cJT8qB/Rectangle-2-1.png",
+        "description": "Deep dive into Java and its advanced features.",
+        "price": "$149",
+        "credit": 4
+    },
+    {
+        "id": "3",
+        "course_name": "Web Development with JavaScript",
+        "image": "https://i.ibb.co/7G4QNYn/Rectangle-2-2.png",
+        "description": "Master the art of web development using JavaScript.",
+        "price": "$129",
+        "credit": 4
+    },
+    {
+        "id": "4",
+        "course_name": "Data Structures in C++",
+        "image": "https://i.ibb.co/8KhskKw/Rectangle-2-3.png",
+        "description": "Understand data structures using C++.",
+        "price": "$119",
+        "credit": 4
+    },
+    {
+        "_id_":"5", 
+         "_course_name_":"Machine Learning with R_", 
+         "_image_":"https://i.ibb.co/T0XJWXP/Rectangle-2-4.png", 
+         "_description_":"_Explore machine learning concepts using R_.", 
+         "_price_":"_$139_", 
+         "_credit_":"_4_" 
+     }, 
+     { 
+         "_id_":"6", 
+         "_course_name_":"_.NET for Beginners_", 
+         "_image_":"https://i.ibb.co/0fQwPhm/Rectangle-2-5.png", 
+         "_description_":"_.NET framework for beginners_.", 
+         "_price_":"_$99_", 
+         "_credit_":"_3_" 
+     }, 
+     { 
+         "_id_":"7", 
+         "_course_name_":"_Ruby on Rails Fundamentals_", 
+         "_image_":"https://i.ibb.co/34pdr3d/Rectangle-2-6.png", 
+         "_description_":"_Learn to build web applications with Ruby on Rails_.", 
+         "_price_":"_$129_", 
+         "_credit_":"_4_" 
+     }, 
+     { 
+         "_id_":"8", 
+         "_course_name_":"_iOS App Development with Swift_", 
+         "_image_":"https://i.ibb.co/sHfQYZ9/Rectangle-3.png", 
+         "_description_":"_Develop iOS applications using Swift_.", 
+         "_price_":"_$149_", 
+         "_credit_":"_4_" 
+     }, 
+     { 
+         "_id_":"9",  
+          "_course_name_" :  "_Android App Development with Kotlin_",  
+          "_image_" :  "https://i.ibb.co/GRzg1MY/Rectangle-3-1.png",  
+          "_description_" :  "_Learn to build Android applications using Kotlin_.",  
+          "_price_" :  "_$149_",  
+          "_credit_" :  "_4_"  
+      }
+]
