@@ -6,12 +6,13 @@ import { useEffect, useState } from 'react';
 import React from 'react';
 
 import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 // import selectedCourse from "./src/assets/components/CourseDetails"
 
 function App() {
-  const notify = () => toast("Wow so easy!");
+  
   const [courses , setCourses] = useState([])
   const [selectedCourse , setSelectedCourse] = useState([])
   const [remaining , setRemaining] = useState(0);
@@ -22,33 +23,33 @@ function App() {
       .then(res => res.json())
       .then(data => setCourses(data))
   } ,[])
-
-  const handleSelectCourse =(course) =>{
+  const handleSelectCourse = (course) => {
     let count = course.credit;
-    const isExist = selectedCourse.find(item => item.id === course.id)
+    const isExist = selectedCourse.find(item => item.id === course.id);
     if(isExist){
-      {notify}
-      <ToastContainer />
+      toast('This Course is already selected');
     }
     else{
       selectedCourse.forEach(item => {
-        count += item.credit
-      })
-      
-      const totaleRemaining = 20 - count;
-      setRemaining(totaleRemaining);
-      setTotalCredit(count)
-      if(totalCredit> 20000){
-toast(Credit finished.)
+        count += item.credit;
+      });
+  
+      if(count > 20){
+        toast('Credit limit exceeded. Cannot add this course.');
       }
-     setSelectedCourse([...selectedCourse , course])
+      else{
+        setSelectedCourse([...selectedCourse , course]);
+        setTotalCredit(count);
+        const totalRemaining = 20 - count;
+        setRemaining(totalRemaining);
+      }
     }
-          
-      
-  }
+  };
+  
 
   return (
     <>
+          <ToastContainer />
       <div className="bg-gray-200 ">
         <h1 className="text-4xl font-semibold text-center my-5">Course Registration</h1>
         <div className="flex border-2  border-blue-400 justify-between">

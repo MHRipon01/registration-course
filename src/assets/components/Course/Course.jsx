@@ -13,7 +13,8 @@ const Course = ({ course ,handleSelectCourse }) => {
  
 
   return (
-    <div className=" m-2">
+  
+    <div className="h-[600px] m-2">
       <div className="p-2 rounded-xl h-full bg-white border-2 border-yellow-600 ">
         <img className="w-full p-2" src={image} alt="" />
         <h2 className="text-3xl font-bold">{course_name} </h2>
@@ -28,8 +29,8 @@ const Course = ({ course ,handleSelectCourse }) => {
             </div>
             
         </div>
-        <div className="flex justify-center items-center ">
-        <button onClick={() => handleSelectCourse(course)}  className="bg-blue-600 px-20 rounded-xl w-4/5 text-white font-bold  py-2">Select</button>
+        <div className="flex  justify-center items-end ">
+        <button onClick={() => handleSelectCourse(course)}  className="bg-blue-500 px-20 rounded-xl w-4/5 text-white font-bold py-3">Select</button>
         </div>
       </div>
     </div>
