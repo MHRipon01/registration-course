@@ -1,21 +1,34 @@
-import { useEffect } from "react";
-import { useState } from "react";
+import PropTypes from "prop-types";
+import Course from "../Course/Course";
 
-const CourseDetails = () => {
+const Coursedetails = ({courses , handleSelectCourse}) => {
 
-    const [course , setCourse] = useState([])
-    useEffect(() =>{
-        fetch('courseData.json')
-        .then(res => res.json())
-        .then(data => setCourse(data))
-    } ,[])
+   
 
+    
 
     return (
-        <div>
-            
+        <div >
+            <h3 className="text-lg">course details: {courses.length}</h3>
+           <div className=" border-2 border-red-600 grid grid-cols-3">
+           {
+                courses.map(course => <Course 
+                    key={course.id} 
+                    course={course}
+                    handleSelectCourse={handleSelectCourse}
+
+                    ></Course>)
+            }
+           </div>
         </div>
     );
+          
 };
 
-export default CourseDetails;
+Coursedetails.propTypes ={
+    courses:PropTypes.array ,
+    handleSelectCourse:PropTypes.func
+
+};
+
+export default Coursedetails;
