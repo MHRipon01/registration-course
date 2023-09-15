@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import Course from "../Course/Course";
+// import Course from "../Course/Course";
 
 const Cart = ({ selectedCourse , remaining ,totalCredit }) => {
   console.log(selectedCourse);
@@ -27,6 +27,9 @@ const Cart = ({ selectedCourse , remaining ,totalCredit }) => {
 
 Cart.propTypes = {
   selectedCourse: PropTypes.array,
+  remaining: PropTypes.number,
+  totalCredit:PropTypes.number
+
 };
 
 export default Cart;
