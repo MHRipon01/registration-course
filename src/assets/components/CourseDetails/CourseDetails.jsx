@@ -9,8 +9,7 @@ const Coursedetails = ({courses , handleSelectCourse}) => {
 
     return (
         <div >
-            <h3 className="text-lg">course details: {courses.length}</h3>
-           <div className=" border-2 border-red-600 grid grid-cols-3">
+           <div className=" grid grid-cols-3">
            {
                 courses.map(course => <Course 
                     key={course.id} 

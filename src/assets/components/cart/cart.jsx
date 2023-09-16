@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const Cart = ({ selectedCourse , remaining ,totalCredit }) => {
   console.log(selectedCourse);
   return (
-    <div className=" border-2 bg-white rounded-lg mr-4 min-w-[350px] min-h-[400px]">
+    <div className="  bg-white rounded-lg mr-4 min-w-[350px] min-h-[400px]">
 
     <h3 className="text-blue-500 font-bold text-2xl my-2 mx-4">Credit Hour Remaining:{remaining}</h3>
     <hr />
@@ -21,6 +21,7 @@ const Cart = ({ selectedCourse , remaining ,totalCredit }) => {
       <hr />
 
       <h3 className="text-gray-800 font-bold mx-4 mt-2 mb-3">Total Credit Hr:{totalCredit} </h3>
+      <hr />
     </div>
   );
 };

@@ -1,15 +1,13 @@
 import "./App.css";
-import CourseDetails from "./assets/components/CourseDetails/Coursedetails";
 import Cart from "./assets/components/cart/cart";
 import { useEffect, useState } from 'react';
 
-// import React from 'react';
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Coursedetails from "./assets/components/courseDetails/courseDetails";
 
 
-// import selectedCourse from "./src/assets/components/CourseDetails"
 
 function App() {
   
@@ -52,15 +50,12 @@ function App() {
           <ToastContainer />
       <div className="bg-gray-200 ">
         <h1 className="text-4xl font-semibold text-center my-5">Course Registration</h1>
-        <div className="flex border-2  border-blue-400 justify-between">
+        <div className="flex  justify-between">
           {/* course & cart */}
           <div className="w-4/5 " >
             {/* course here */}
-            <CourseDetails 
-            courses={courses}
-            handleSelectCourse={handleSelectCourse}
-
-             ></CourseDetails>
+           
+            <Coursedetails courses={courses} handleSelectCourse={handleSelectCourse}></Coursedetails>
           </div>
           <div>
             {/* cart here */}
